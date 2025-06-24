@@ -20,24 +20,11 @@ class Player:
         if keys[pygame.K_DOWN] or keys[pygame.K_s]:
             dy = self.speed
 
-        # Collision detection
+        # New position
         new_rect = self.rect.move(dx, dy)
-        if not self.collides(new_rect, map_data):
-            self.rect = new_rect
 
-    def collides(self, rect, map_data):
-        col = rect.x // TILE_SIZE
-        row = rect.y // TILE_SIZE
-        if row < 0 or row >= len(map_data) or col < 0 or col >= len(map_data[0]):
-            return True
-        return map_data[row][col] == 1
-
-    def draw(self, screen):
-        screen.blit(self.image, self.rect.topleft)
-
-        new_rect = self.rect.move(dx, dy)
-        if not self.collides_with_map(new_rect, map_data) and not self.collides_with_buildings(new_rect,
-                                                                                               building_rects):
+        # Check for collisions with map walls and buildings
+        if not self.collides_with_map(new_rect, map_data) and not self.collides_with_buildings(new_rect, building_rects):
             self.rect = new_rect
 
     def collides_with_map(self, rect, map_data):
@@ -48,10 +35,7 @@ class Player:
         return map_data[row][col] == 1
 
     def collides_with_buildings(self, rect, building_rects):
-        for b_rect in building_rects:
-            if rect.colliderect(b_rect):
-                return True
-        return False
+        return any(rect.colliderect(b_rect) for b_rect in building_rects)
 
     def draw(self, screen):
         screen.blit(self.image, self.rect.topleft)
