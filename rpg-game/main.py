@@ -43,7 +43,7 @@ while running:
     player.move(keys, game_map.map_data, game_map.get_building_rects())
 
     # Update NPC movement
-    npc.update()  # ✅ This line makes the NPC follow its routine
+    npc.update(game_map.map_data, game_map.get_building_rects())
 
     # Draw everything
     game_map.draw(screen)

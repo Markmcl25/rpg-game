@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1e38b208-aac5-4d2b-b1af-81980da653ce" name="Changes" comment="updated player.py to include collisions">
-      <change beforePath="$PROJECT_DIR$/rpg-game/npc.py" beforeDir="false" afterPath="$PROJECT_DIR$/rpg-game/npc.py" afterDir="false" />
+    <list default="true" id="1e38b208-aac5-4d2b-b1af-81980da653ce" name="Changes" comment="updated npc.py to include collision detection">
+      <change beforePath="$PROJECT_DIR$/rpg-game/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/rpg-game/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,7 +110,15 @@
       <option name="project" value="LOCAL" />
       <updated>1750780980925</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="updated npc.py to include collision detection">
+      <option name="closed" value="true" />
+      <created>1750781114213</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1750781114213</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -119,6 +127,7 @@
     <MESSAGE value="added npc routine to main, changes will be needed" />
     <MESSAGE value="added collisions for player and npc for buildings" />
     <MESSAGE value="updated player.py to include collisions" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated player.py to include collisions" />
+    <MESSAGE value="updated npc.py to include collision detection" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated npc.py to include collision detection" />
   </component>
 </project>
