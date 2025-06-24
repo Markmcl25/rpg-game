@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1e38b208-aac5-4d2b-b1af-81980da653ce" name="Changes" comment="added npc routine to main, changes will be needed">
-      <change afterPath="$PROJECT_DIR$/rpg-game/assets/npc1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rpg-game/assets/npc.py" beforeDir="false" afterPath="$PROJECT_DIR$/rpg-game/npc.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rpg-game/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/rpg-game/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rpg-game/map.py" beforeDir="false" afterPath="$PROJECT_DIR$/rpg-game/map.py" afterDir="false" />
+    <list default="true" id="1e38b208-aac5-4d2b-b1af-81980da653ce" name="Changes" comment="updated player.py to include collisions">
+      <change beforePath="$PROJECT_DIR$/rpg-game/npc.py" beforeDir="false" afterPath="$PROJECT_DIR$/rpg-game/npc.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,13 +94,31 @@
       <option name="project" value="LOCAL" />
       <updated>1750779481643</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="added collisions for player and npc for buildings">
+      <option name="closed" value="true" />
+      <created>1750780751949</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1750780751949</updated>
+    </task>
+    <task id="LOCAL-00005" summary="updated player.py to include collisions">
+      <option name="closed" value="true" />
+      <created>1750780980925</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1750780980925</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Inital commit" />
     <MESSAGE value="added sprites for buildings, grass, footpaths, linked with github, added npc starter code in npc.py" />
     <MESSAGE value="added npc routine to main, changes will be needed" />
-    <option name="LAST_COMMIT_MESSAGE" value="added npc routine to main, changes will be needed" />
+    <MESSAGE value="added collisions for player and npc for buildings" />
+    <MESSAGE value="updated player.py to include collisions" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated player.py to include collisions" />
   </component>
 </project>
