@@ -49,3 +49,18 @@ class Map:
     def get_building_rects(self):
         return [pygame.Rect(pos[0], pos[1], building.get_width(), building.get_height()) for building, pos in
                 self.buildings]
+
+    def get_collision_rects(self):
+        rects = []
+
+        # Walls
+        for row in range(ROWS):
+            for col in range(COLS):
+                if self.map_data[row][col] == 1:
+                    rects.append(pygame.Rect(col * TILE_SIZE, row * TILE_SIZE, TILE_SIZE, TILE_SIZE))
+
+        # Buildings (already sized and placed)
+        for building, (x, y) in self.buildings:
+            rects.append(pygame.Rect(x, y, building.get_width(), building.get_height()))
+
+        return rects

@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1e38b208-aac5-4d2b-b1af-81980da653ce" name="Changes" comment="added sprites for buildings, grass, footpaths, linked with github, added npc starter code in npc.py">
+    <list default="true" id="1e38b208-aac5-4d2b-b1af-81980da653ce" name="Changes" comment="added npc routine to main, changes will be needed">
+      <change afterPath="$PROJECT_DIR$/rpg-game/assets/npc1.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rpg-game/assets/npc.py" beforeDir="false" afterPath="$PROJECT_DIR$/rpg-game/npc.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rpg-game/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/rpg-game/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rpg-game/map.py" beforeDir="false" afterPath="$PROJECT_DIR$/rpg-game/map.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,8 +53,9 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\mark2\PycharmProjects\PythonProject10\rpg-game\assets" />
+      <recent name="C:\Users\mark2\PycharmProjects\PythonProject10\rpg-game" />
       <recent name="C:\Users\mark2\PycharmProjects\PythonProject10" />
+      <recent name="C:\Users\mark2\PycharmProjects\PythonProject10\rpg-game\assets" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -86,12 +90,21 @@
       <option name="project" value="LOCAL" />
       <updated>1750779187639</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="added npc routine to main, changes will be needed">
+      <option name="closed" value="true" />
+      <created>1750779481643</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1750779481643</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Inital commit" />
     <MESSAGE value="added sprites for buildings, grass, footpaths, linked with github, added npc starter code in npc.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="added sprites for buildings, grass, footpaths, linked with github, added npc starter code in npc.py" />
+    <MESSAGE value="added npc routine to main, changes will be needed" />
+    <option name="LAST_COMMIT_MESSAGE" value="added npc routine to main, changes will be needed" />
   </component>
 </project>

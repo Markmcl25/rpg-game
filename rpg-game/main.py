@@ -18,12 +18,12 @@ clock = pygame.time.Clock()
 player = Player(100, 100)
 game_map = Map()
 
-# Load an NPC with a basic routine (move in a square loop)
+# Load an NPC with a basic routine
 npc_routine = [
-    (1, 0, 60),   # right for 60 frames
-    (0, 1, 60),   # down
-    (-1, 0, 60),  # left
-    (0, -1, 60),  # up
+    (1, 0, 60),   # move right for 60 frames
+    (0, 1, 60),   # move down
+    (-1, 0, 60),  # move left
+    (0, -1, 60),  # move up
 ]
 npc = NPC(200, 200, "assets/npc1.png", npc_routine)
 
@@ -31,27 +31,27 @@ npc = NPC(200, 200, "assets/npc1.png", npc_routine)
 running = True
 while running:
     clock.tick(FPS)
-    screen.fill((0, 0, 0))  # Black background (optional since map draws over this)
+    screen.fill((0, 0, 0))
 
-    # Handle quit event
+    # Event handling
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             running = False
 
-    # Player movement input + collision
+    # Handle movement input with collision
     keys = pygame.key.get_pressed()
     player.move(keys, game_map.map_data, game_map.get_building_rects())
 
-    # NPC routine movement update
-    npc.update()
+    # Update NPC movement
+    npc.update()  # ✅ This line makes the NPC follow its routine
 
-    # Draw everything in correct order
-    game_map.draw(screen)  # Draw background and buildings
-    npc.draw(screen)       # Draw NPC on top of the map
-    player.draw(screen)    # Draw player on top
+    # Draw everything
+    game_map.draw(screen)
+    npc.draw(screen)  # ✅ Draw the NPC before or after player
+    player.draw(screen)
 
-    pygame.display.flip()  # Refresh screen
+    pygame.display.flip()
 
-# Clean exit
+# Quit the game
 pygame.quit()
 sys.exit()
